@@ -25,6 +25,26 @@
 ### Prerequisites
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
 - SQL Server (LocalDB or Express)
+  
+
+
+### screenshots
+
+
+<div align="center">
+
+<img src="screenshots/Categories.png" width="800" alt="Categories"/>
+<br><br>
+<img src="screenshots/Books.png" width="800" alt="Books"/>
+<br><br>
+<img src="screenshots/Orders.png" width="800" alt="Orders"/>
+<br><br>
+<img src="screenshots/Login.png" width="800" alt="Login"/>
+<br><br>
+<img src="screenshots/CreateAccount.png" width="800" alt="Create Account"/>
+
+</div>
+
 
 ### Steps
 ```bash
@@ -44,20 +64,5 @@ dotnet run
 
 
 
-## اسکرین‌شات‌ها
 
-## Screenshots
 
-<div align="center">
-
-<img src="screenshots/Categories.png" width="800" alt="Categories"/>
-<br><br>
-<img src="screenshots/Books.png" width="800" alt="Books"/>
-<br><br>
-<img src="screenshots/Orders.png" width="800" alt="Orders"/>
-<br><br>
-<img src="screenshots/Login.png" width="800" alt="Login"/>
-<br><br>
-<img src="screenshots/CreateAccount.png" width="800" alt="Create Account"/>
-
-</div>
