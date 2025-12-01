@@ -42,14 +42,13 @@ dotnet ef database update
 dotnet run
 
 
-###Screenshots
+
 
 ## اسکرین‌شات‌ها
 
+## Screenshots
+
 <div align="center">
-
-
-
 
 <img src="screenshots/Categories.png" width="800" alt="Categories"/>
 <br><br>
@@ -59,6 +58,6 @@ dotnet run
 <br><br>
 <img src="screenshots/Login.png" width="800" alt="Login"/>
 <br><br>
-<img src="screenshots/CreateAccount.png" width="800" alt="CreateAccount"/>
+<img src="screenshots/CreateAccount.png" width="800" alt="Create Account"/>
 
 </div>
