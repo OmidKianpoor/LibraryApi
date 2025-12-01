@@ -40,3 +40,12 @@ dotnet ef database update
 
 # 4. Run the application
 dotnet run
+
+
+###Screenshots
+
+<img src="screenshots/Categories.png" width="48%">
+<img src="screenshots/Books.png" width="48%">
+<img src="screenshots/Orders.png" width="48%">
+<img src="screenshots/Login.png" width="48%">
+<img src="screenshots/CreateAccount.png" width="48%">
