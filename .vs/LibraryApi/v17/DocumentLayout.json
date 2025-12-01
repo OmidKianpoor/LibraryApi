@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\LibraryApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\views\\account\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:views\\account\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\views\\account\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:views\\account\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\views\\account\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:views\\account\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -86,12 +86,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-01T05:51:23.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T05:51:23.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -99,12 +98,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T05:49:41.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T05:49:41.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -117,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Orders.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Views\\Account\\Orders.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Orders.cshtml",
@@ -125,18 +123,17 @@
               "RelativeToolTip": "Views\\Account\\Orders.cshtml",
               "ViewState": "AgIAABoBAAAAAAAAAAAAAJAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-01T05:48:54.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T05:48:54.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Books.cshtml",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Views\\Account\\Books.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Books.cshtml",
               "ToolTip": "C:\\Users\\USER\\Desktop\\LibraryApi\\Views\\Account\\Books.cshtml",
               "RelativeToolTip": "Views\\Account\\Books.cshtml",
-              "ViewState": "AgIAAI8BAAAAAAAAAAAAANYAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAtwCAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-01T05:47:34.644Z",
               "EditorCaption": ""
@@ -151,8 +148,7 @@
               "RelativeToolTip": "Dtos\\OrderItemDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T05:46:54.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T05:46:54.851Z"
             },
             {
               "$type": "Document",
@@ -164,8 +160,7 @@
               "RelativeToolTip": "Controllers\\OrdersController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T05:45:57.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T05:45:57.248Z"
             },
             {
               "$type": "Document",
@@ -177,8 +172,7 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T05:45:23.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T05:45:23.788Z"
             }
           ]
         }
