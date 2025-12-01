@@ -22,7 +22,6 @@ namespace LibraryApi.Entities
         public string UserEmail { get; set; }
         [MaxLength(16)]
         public string UserPhone { get; set; }
-
         public string City { get; set; }
         public bool IsActive { get; set; } = false;
         public string Token { get; set; } = "";

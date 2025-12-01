@@ -29,17 +29,12 @@ namespace LibraryApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetBooks(int categoryId)
         {
-
-
             if (!await _Repository.CategoryExist(categoryId))
-            {
-
                 return NotFound();
-            }
+
             var booksForCategoriy = await _Repository.GetAllBooksAsync(categoryId);
 
             return Ok(_Mapper.Map<IEnumerable<BookDto>>(booksForCategoriy));
-
         }
 
         [HttpGet("{bookId}")]
@@ -83,7 +78,7 @@ namespace LibraryApi.Controllers
 
         [HttpPut("{bookId}")]
 
-        public async Task<ActionResult> EditBookInfo(int categoryId,int bookId, [FromBody] BookForEditDto bookForEdit)
+        public async Task<ActionResult> EditBookInfo(int categoryId, int bookId, [FromBody] BookForEditDto bookForEdit)
         {
             if (!await _Repository.CategoryExist(categoryId))
             {
@@ -103,7 +98,7 @@ namespace LibraryApi.Controllers
 
         [HttpDelete("{bookId}")]
 
-        public async Task<ActionResult> DeletOneBook(int categoryId,int bookId)
+        public async Task<ActionResult> DeletOneBook(int categoryId, int bookId)
         {
             if (!await _Repository.CategoryExist(categoryId))
             {
@@ -115,7 +110,7 @@ namespace LibraryApi.Controllers
             {
                 return NotFound();
             }
-             _Repository.DeletBook(book);
+            _Repository.DeletBook(book);
             await _Repository.SaveChangesAsync();
             _Logger.LogWarning($"Book With UserId {bookId} Deleted!");
             return NoContent();
@@ -124,7 +119,7 @@ namespace LibraryApi.Controllers
         [HttpPatch("{bookId}")]
 
         public async Task<IActionResult> PartialEditForBook
-            (int categoryId,int bookId, [FromBody]JsonPatchDocument<BookForEditDto> patchDocument)
+            (int categoryId, int bookId, [FromBody] JsonPatchDocument<BookForEditDto> patchDocument)
         {
             if (!await _Repository.CategoryExist(categoryId))
             {
@@ -148,7 +143,7 @@ namespace LibraryApi.Controllers
 
             _Mapper.Map(bookToPatch, book);
 
-           await _Repository.SaveChangesAsync();
+            await _Repository.SaveChangesAsync();
 
             return NoContent();
 

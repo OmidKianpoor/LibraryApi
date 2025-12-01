@@ -23,6 +23,11 @@ namespace LibraryApi.Controllers
             _Mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _Logger = logger;
         }
+
+    
+
+
+
         [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAllCategories()

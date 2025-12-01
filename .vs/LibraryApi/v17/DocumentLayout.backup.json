@@ -1,54 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\LibraryApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\services\\authenticationservice\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:services\\authenticationservice\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\views\\account\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:views\\account\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\views\\account\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:views\\account\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\migrations\\20251121234932_aaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:migrations\\20251121234932_aaa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\dtos\\createorderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:dtos\\createorderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\dtos\\bookforcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:dtos\\bookforcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\new tests c#\\libraryapi\\dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|c:\\users\\user\\desktop\\libraryapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B14A75-8DAF-422E-8985-80ABECC8CF8D}|LibraryApi.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,8 +38,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\LibraryApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:49:41.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\LibraryApi\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T05:49:36.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Views\\Account\\Orders.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Orders.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\LibraryApi\\Views\\Account\\Orders.cshtml*",
+              "RelativeToolTip": "Views\\Account\\Orders.cshtml*",
+              "ViewState": "AgIAABoBAAAAAAAAAAAAAJAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T05:48:54.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Books.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Views\\Account\\Books.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Books.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\LibraryApi\\Views\\Account\\Books.cshtml*",
+              "RelativeToolTip": "Views\\Account\\Books.cshtml*",
+              "ViewState": "AgIAAI8BAAAAAAAAAAAAANYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-01T05:47:34.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Dtos\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\LibraryApi\\Dtos\\OrderItemDto.cs",
+              "RelativeToolTip": "Dtos\\OrderItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:46:54.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\LibraryApi\\Controllers\\OrdersController.cs*",
+              "RelativeToolTip": "Controllers\\OrdersController.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T05:45:57.248Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:597378385:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
@@ -94,153 +152,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:50:31.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20251121234932_aaa.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Migrations\\20251121234932_aaa.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251121234932_aaa.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Migrations\\20251121234932_aaa.cs",
-              "RelativeToolTip": "Migrations\\20251121234932_aaa.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:49:33.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateOrderItemDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Dtos\\CreateOrderItemDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\CreateOrderItemDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Dtos\\CreateOrderItemDto.cs",
-              "RelativeToolTip": "Dtos\\CreateOrderItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:39:05.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BookForCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Dtos\\BookForCreateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\BookForCreateDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Dtos\\BookForCreateDto.cs",
-              "RelativeToolTip": "Dtos\\BookForCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:39:02.53Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BookDto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Dtos\\BookDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\BookDto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Dtos\\BookDto.cs",
-              "RelativeToolTip": "Dtos\\BookDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:38:59.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\OrderItem.cs",
-              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\OrderItem.cs",
-              "RelativeToolTip": "Models\\OrderItem.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:37:45.733Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\LibraryApi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\LibraryApi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:37:41.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:37:40.573Z",
+              "WhenOpened": "2025-12-01T05:45:23.788Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:34:18.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthenticationServices.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Services\\AuthenticationService\\AuthenticationServices.cs",
-              "RelativeDocumentMoniker": "Services\\AuthenticationService\\AuthenticationServices.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Services\\AuthenticationService\\AuthenticationServices.cs",
-              "RelativeToolTip": "Services\\AuthenticationService\\AuthenticationServices.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAvwBYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:25:01.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:19:41.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\New Tests C#\\LibraryApi\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:06:47.035Z"
             }
           ]
         }

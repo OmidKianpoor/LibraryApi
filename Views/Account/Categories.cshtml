@@ -1,0 +1,347 @@
+﻿@{
+	ViewData["Title"] = "Categories";
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>@ViewData["Title"] - Library App</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			min-height: 100vh;
+			background: linear-gradient(-45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+			background-size: 400% 400%;
+			animation: gradient 15s ease infinite;
+			font-family: 'Segoe UI', Tahoma, sans-serif;
+			display: flex;
+			flex-direction: column;
+		}
+
+		@@keyframes gradient {
+			0%, 100% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+		}
+
+		.header-title {
+			background: linear-gradient(135deg, #2a9d8f, #264653);
+			color: white;
+			padding: 2.8rem 1rem 2.2rem;
+			text-align: center;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+			position: relative;
+		}
+
+			.header-title h1 {
+				margin: 0;
+				font-weight: 700;
+				font-size: 2.5rem;
+			}
+
+			.header-title i.main-icon {
+				font-size: 3rem;
+				margin-bottom: 0.5rem;
+				opacity: 0.9;
+			}
+
+		.auth-buttons {
+			position: absolute;
+			top: 16px;
+			right: 20px;
+			display: flex;
+			gap: 14px;
+			z-index: 100;
+		}
+
+		.auth-btn {
+			width: 52px;
+			height: 52px;
+			background: rgba(255,255,255,0.18);
+			backdrop-filter: blur(12px);
+			border: 1.5px solid rgba(255,255,255,0.4);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			font-size: 1.35rem;
+			transition: all 0.35s ease;
+			text-decoration: none;
+			box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+		}
+
+			.auth-btn:hover {
+				transform: translateY(-6px) scale(1.12);
+				box-shadow: 0 16px 30px rgba(0,0,0,0.6);
+			}
+
+			.auth-btn.login:hover {
+				background: #2a9d8f;
+			}
+
+			.auth-btn.signup:hover {
+				background: #e76f51;
+			}
+
+			.auth-btn.logout:hover {
+				background: #dc3545;
+			}
+
+		.categories-container {
+			flex: 1;
+			padding: 50px 20px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.categories-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+			gap: 32px;
+			max-width: 1350px;
+			width: 100%;
+		}
+
+		.category-card {
+			background: rgba(255,255,255,0.15);
+			backdrop-filter: blur(15px);
+			border-radius: 22px;
+			border: 1px solid rgba(255,255,255,0.22);
+			overflow: hidden;
+			transition: transform 0.4s ease, box-shadow 0.4s ease;
+			box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+			.category-card:hover {
+				transform: translateY(-15px);
+				box-shadow: 0 25px 50px rgba(42,157,143,0.5);
+			}
+
+		.category-header {
+			background: linear-gradient(135deg, #2a9d8f, #264653);
+			color: white;
+			padding: 2.2rem 1rem;
+			text-align: center;
+		}
+
+			.category-header i {
+				font-size: 3.4rem;
+				margin-bottom: 0.8rem;
+			}
+
+			.category-header h3 {
+				margin: 0;
+				font-size: 1.65rem;
+				font-weight: 600;
+			}
+
+		.category-body {
+			padding: 2rem 1.8rem;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			text-align: center;
+			color: white;
+		}
+
+		.category-content {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			min-height: 110px;
+		}
+
+		.category-description {
+			font-size: 0.98rem;
+			line-height: 1.65;
+			opacity: 0.88;
+			margin: 0;
+		}
+
+		.btn-view-books {
+			padding: 0.7rem 1.5rem;
+			font-size: 1rem;
+			border-radius: 12px;
+		}
+
+			.btn-view-books.disabled {
+				background: rgba(255,255,255,0.1);
+				border: 1px solid rgba(255,255,255,0.3);
+				color: rgba(255,255,255,0.5);
+				cursor: not-allowed;
+				pointer-events: none;
+			}
+
+		.footer {
+			background: rgba(0,0,0,0.45);
+			color: #a8e6cf;
+			text-align: center;
+			padding: 1.3rem;
+			font-size: 0.95rem;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="header-title">
+		<i class="fas fa-th-large main-icon"></i>
+		<h1>All Categories</h1>
+		<div class="auth-buttons" id="authButtons"></div>
+	</div>
+	
+	
+	<div class="position-fixed" style="top: 20px; left: 80px; z-index: 1000;" id="ordersIconContainer" style="display: none;">
+		<a href="/Account/Orders"
+		   class="d-flex align-items-center justify-content-center text-white rounded-circle shadow-2xl position-relative transition-all"
+		   style="width: 62px; height: 62px;
+              background: linear-gradient(135deg, #2a9d8f, #264653);
+              border: 3px solid rgba(255,255,255,0.35);
+              backdrop-filter: blur(15px);
+              box-shadow: 0 8px 32px rgba(42, 157, 143, 0.5);
+              text-decoration: none;"
+		   title="My Orders">
+			<i class="fas fa-shopping-cart fs-3"></i>
+
+			<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill fw-bold"
+				  id="orderCountBadge"
+				  style="font-size: 0.75rem; display: none;
+                     background: #a8e6cf;
+                     color: #1b263b;
+                     border: 2px solid #2a9d8f;">
+				0
+			</span>
+		</a>
+	</div>
+
+	<div class="categories-container">
+		<div class="categories-grid" id="categoriesList">
+			<div class="text-center text-white mt-5">
+				<div class="spinner-border" role="status"></div>
+				<p class="mt-3">Loading categories...</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		© 2025 Library App - All rights reserved
+	</div>
+
+	<script>
+		const token = localStorage.getItem('jwt_token') || localStorage.getItem('jwt');
+		const isLoggedIn = !!token;
+		const authContainer = document.getElementById('authButtons');
+
+		if (isLoggedIn) {
+			authContainer.innerHTML = `<a href="#" class="auth-btn logout" title="Logout" onclick="logout()"><i class="fas fa-sign-out-alt"></i></a>`;
+		} else {
+			authContainer.innerHTML = `
+				<a href="/Account/Login" class="auth-btn login" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+				<a href="/Account/Signup" class="auth-btn signup" title="Sign Up"><i class="fas fa-user-plus"></i></a>
+			`;
+		}
+
+		function logout() {
+			if (confirm('Are you sure you want to log out?')) {
+				localStorage.removeItem('jwt_token');
+				localStorage.removeItem('jwt');
+				window.location.reload();
+			}
+		}
+
+		async function loadCategories() {
+			try {
+				const res = await fetch('/api/Categories');
+				if (!res.ok) throw new Error('Failed');
+				const categories = await res.json();
+				const container = document.getElementById('categoriesList');
+				container.innerHTML = '';
+
+				if (categories.length === 0) {
+					container.innerHTML = '<p class="text-white text-center fs-4">No categories found.</p>';
+					return;
+				}
+
+				categories.forEach(cat => {
+					const description = cat.description ? cat.description : '<em>No description available.</em>';
+					const card = document.createElement('div');
+					card.className = 'category-card';
+
+
+					   const viewButton = isLoggedIn
+		? `<a href="/Account/Books?categoryId=${cat.id}" class="btn btn-outline-light btn-view-books">View Books</a>`
+		: `<button class="btn btn-outline-light btn-view-books disabled" title="Login required">
+			 Login For View Books
+		   </button>`;
+
+					card.innerHTML = `
+						<div class="category-header">
+							<i class="fas fa-folder-open"></i>
+							<h3>${cat.name || 'Untitled'}</h3>
+						</div>
+						<div class="category-body">
+							<div class="category-content">
+								<div class="category-description">${description}</div>
+							</div>
+							${viewButton}
+						</div>
+					`;
+					container.appendChild(card);
+				});
+
+			} catch (err) {
+				document.getElementById('categoriesList').innerHTML =
+					`<p class="text-danger text-center fs-5">Failed to load categories.</p>`;
+			}
+		}
+
+		   window.addEventListener('DOMContentLoaded', loadCategories);
+			document.addEventListener('DOMContentLoaded', function () {
+			const token = localStorage.getItem('jwt_token');
+			const ordersLink = document.querySelector('a[href="/Account/Orders"]');
+			const badge = document.getElementById('orderCountBadge');
+
+			if (!token) {
+				if (ordersLink) ordersLink.style.display = 'none';
+				return;
+			}
+
+			
+			if (ordersLink) {
+				ordersLink.style.display = 'flex';
+			}
+
+			
+			fetch('/api/orders', {
+				headers: { 'Authorization': 'Bearer ' + token }
+			})
+			.then(res => {
+				if (res.ok) return res.json();
+			})
+			.then(orders => {
+				if (orders && orders.length > 0 && badge) {
+					badge.textContent = orders.length;
+					badge.style.display = 'block';
+				}
+			})
+			.catch(() => {  });
+		   });
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

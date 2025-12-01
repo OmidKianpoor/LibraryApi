@@ -1,0 +1,429 @@
+﻿@{
+    ViewData["Title"] = "Books";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Library App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, #0d1b2a, #1b263b, #415a77, #778da9);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @@keyframes gradient {
+            0%, 100% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+        }
+
+        .header-title {
+            background: linear-gradient(135deg, #2a9d8f, #264653);
+            color: white;
+            padding: 2.8rem 1rem 2.2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            position: relative;
+        }
+
+            .header-title h1 {
+                margin: 0;
+                font-weight: 700;
+                font-size: 2.5rem;
+            }
+
+            .header-title i {
+                font-size: 3rem;
+                margin-bottom: 0.5rem;
+                opacity: 0.9;
+            }
+
+
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+
+        .transition-all:hover {
+           transform: translateY(-4px) scale(1.1);
+           background: rgba(42, 157, 143, 0.4) !important;
+           box-shadow: 0 10px 25px rgba(42, 157, 143, 0.4) !important;
+        }
+        .back-btn {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.4rem;
+            transition: all 0.3s;
+        }
+
+            .back-btn:hover {
+                background: rgba(255,255,255,0.3);
+                transform: translateY(-50%) scale(1.1);
+            }
+
+        .books-container {
+            flex: 1;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .book-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.22);
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+        }
+
+            .book-card:hover {
+                transform: translateY(-12px);
+                box-shadow: 0 25px 50px rgba(42,157,143,0.6);
+            }
+
+        .book-cover {
+            height: 220px;
+            background: linear-gradient(135deg, #264653, #2a9d8f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+
+        .book-body {
+            padding: 1.8rem;
+            color: white;
+        }
+
+        .book-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+
+        .book-author {
+            opacity: 0.9;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        }
+
+        .book-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.85;
+            margin-bottom: 1.2rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .btn-action {
+            border-radius: 12px;
+            padding: 0.6rem 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        .btn-edit {
+            background: #e9c46a;
+        }
+
+        .btn-delete {
+            background: #e76f51;
+        }
+
+        .footer {
+            background: rgba(0,0,0,0.45);
+            color: #a8e6cf;
+            text-align: center;
+            padding: 1.3rem;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-title position-relative">
+
+        <a href="/Account/Categories"
+           class="position-absolute start-0 top-50 translate-middle-y ms-4
+          d-flex align-items-center justify-content-center
+          text-white
+          rounded-circle
+          transition-all
+          shadow-2xl"
+           style="width: 58px; height: 58px;
+          background: linear-gradient(135deg, #2a9d8f, #264653);
+          border: 2px solid rgba(255,255,255,0.3);
+          backdrop-filter: blur(15px);
+          text-decoration: none;"
+           title="Home">
+            <i class="fas fa-home fs-3"></i>
+        </a>
+
+        <i class="fas fa-book fa-3x mb-3 text-white opacity-75"></i>
+        <h1 id="categoryName" class="text-white fw-bold">Books</h1>
+    </div>
+
+    <div class="books-container">
+        <div class="books-grid" id="booksList">
+            <div class="text-center text-white mt-5">
+                <div class="spinner-border" role="status"></div>
+                <p class="mt-3">Loading books...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Library App - All rights reserved
+    </div>
+
+    <!--adding book modal -->
+    <div class="modal fade" id="addBookModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header" style="background: linear-gradient(135deg, #2a9d8f, #264653); color:white;">
+                    <h5 class="modal-title"><i class="fas fa-plus me-2"></i>Add New Book</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(15px); color:white;">
+                    <form id="addBookForm">
+                        <div class="row g-3">
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="title" placeholder="Book Title *" required>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="author" placeholder="Author *" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" id="description" rows="3" placeholder="Description (optional)"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" id="publishYear" placeholder="Publish Year (optional)">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="isbn" placeholder="ISBN (optional)">
+                            </div>
+                        </div>
+                        <div class="text-end mt-4">
+                            <button type="submit" class="btn btn-success btn-action">
+                                <span id="addSpinner" class="spinner-border spinner-border-sm me-2 d-none"></span>
+                                Add Book
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryId = urlParams.get('categoryId');
+
+        if (!categoryId || isNaN(categoryId)) {
+            document.getElementById('booksList').innerHTML =
+                '<p class="text-danger text-center fs-3">Invalid category</p>';
+            throw new Error("No categoryId");
+        }
+
+        const token = localStorage.getItem('jwt_token');
+
+        
+        if (!token) {
+            window.location.href = '/Account/Login?returnUrl=' + encodeURIComponent(window.location.href);
+        }
+
+        
+        async function loadCategoryName() {
+            try {
+                const res = await fetch(`/api/Categories/${categoryId}`, {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                if (res.ok) {
+                    const cat = await res.json();
+                    document.getElementById('categoryName').textContent = `${cat.name || cat.Name} - Books`;
+                }
+            } catch (e) {
+                document.getElementById('categoryName').textContent = 'Books';
+            }
+        }
+
+    ‌
+        async function loadBooks() {
+            try {
+                const response = await fetch(`/api/categories/${categoryId}/books`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/json'
+                    }
+                });
+
+                
+                if (response.status === 401) {
+                    localStorage.removeItem('jwt_token');
+                    alert('Session expired. Please login again.');
+                    window.location.href = '/Account/Login';
+                    return;
+                }
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const books = await response.json();
+                const container = document.getElementById('booksList');
+                container.innerHTML = '';
+
+                if (books.length === 0) {
+                    container.innerHTML = `
+                        <div class="text-center text-white py-5">
+                            <p class="fs-3">No books yet</p>
+                            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#addBookModal">
+                                Add First Book
+                            </button>
+                        </div>`;
+                    return;
+                }
+
+                books.forEach(book => {
+                    const card = document.createElement('div');
+                    card.className = 'book-card';
+                    card.innerHTML = `
+                        <div class="book-cover"><i class="fas fa-book-open"></i></div>
+                        <div class="book-body">
+                            <h5 class="book-title">${book.title || 'Untitled'}</h5>
+                            <p class="book-author">by ${book.author || 'Unknown'}</p>
+                            <p class="book-desc">${book.summary || 'No summary available.'}</p>
+                            <div class="d-flex gap-2 mt-3">
+                                <button class="btn btn-warning btn-sm" onclick="editBook(${book.id})">Edit</button>
+                                <button class="btn btn-danger btn-sm" onclick="deleteBook(${book.id})">Delete</button>
+                                <button class="btn btn-success btn-sm" onclick="orderBook(${book.id}, '${book.title}')">Order</button>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+
+            } catch (err) {
+                console.error('Error:', err);
+                document.getElementById('booksList').innerHTML =
+                    '<p class="text-danger text-center fs-4">Failed to load books.<br>Open Console (F12) for details.</p>';
+            }
+        }
+
+      
+        async function deleteBook(bookId) {
+            if (!confirm('Delete this book?')) return;
+            const res = await fetch(`/api/categories/${categoryId}/books/${bookId}`, {
+                method: 'DELETE',
+                headers: { 'Authorization': `Bearer ${token}` }
+            });
+            if (res.ok) loadBooks();
+            else alert('Delete failed');
+        }
+                async function orderBook(bookId, bookTitle) {
+            if (!confirm(`Order "${bookTitle}"?`)) return;
+
+            const payload = {
+                items: [{ bookId: bookId, quantity: 1 }]
+            };
+
+            try {
+                const res = await fetch('/api/orders', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (res.ok) {
+                    alert('Book ordered successfully!');
+                    // اختیاری: بره به صفحه Orders
+                    // window.location.href = '/Account/Orders';
+                } else {
+                    alert('Order failed');
+                }
+            } catch (e) {
+                alert('Connection error');
+            }
+        }
+        
+        document.getElementById('addBookForm').onsubmit = async function(e) {
+            e.preventDefault();
+            const book = {
+                title: document.getElementById('title').value,
+                author: document.getElementById('author').value,
+               summary: document.getElementById('description').value || null,
+                publishYear: document.getElementById('publishYear').value || null,
+                isbn: document.getElementById('isbn').value || null
+            };
+
+            const res = await fetch(`/api/categories/${categoryId}/books`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(book)
+            });
+
+            if (res.ok) {
+                bootstrap.Modal.getInstance(document.getElementById('addBookModal')).hide();
+                e.target.reset();
+                loadBooks();
+            } else {
+                alert('Failed to add book');
+            }
+        };
+
+    
+        loadCategoryName();
+        loadBooks();
+    </script>
+</body>
+</html>

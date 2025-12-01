@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "LibraryApi.Controllers.AuthenticationController",
     "Method": "Login",
     "RelativePath": "api/authentication/login",
@@ -8,7 +24,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "authenticationRequestBody",
+        "Name": "request",
         "Type": "LibraryApi.Models.AuthenticateModels.AuthenticationRequestBodyDto",
         "IsRequired": true
       }
@@ -24,7 +40,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "libraryUser",
+        "Name": "model",
         "Type": "LibraryApi.Models.AuthenticateModels.LibraryUsersDto",
         "IsRequired": true
       }
@@ -264,22 +280,6 @@
   },
   {
     "ContainingType": "LibraryApi.Controllers.OrdersController",
-    "Method": "CreateOrder",
-    "RelativePath": "api/Orders",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "LibraryApi.Dtos.CreateOrderDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "LibraryApi.Controllers.OrdersController",
     "Method": "GetOrders",
     "RelativePath": "api/Orders",
     "HttpMethod": "GET",
@@ -290,15 +290,15 @@
   },
   {
     "ContainingType": "LibraryApi.Controllers.OrdersController",
-    "Method": "GetOrder",
-    "RelativePath": "api/Orders/{id}",
-    "HttpMethod": "GET",
+    "Method": "CreateOrder",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "dto",
+        "Type": "LibraryApi.Dtos.CreateOrderDto",
         "IsRequired": true
       }
     ],
