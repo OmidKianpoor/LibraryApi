@@ -44,8 +44,21 @@ dotnet run
 
 ###Screenshots
 
-<img src="screenshots/Categories.png" width="48%">
-<img src="screenshots/Books.png" width="48%">
-<img src="screenshots/Orders.png" width="48%">
-<img src="screenshots/Login.png" width="48%">
-<img src="screenshots/CreateAccount.png" width="48%">
+## اسکرین‌شات‌ها
+
+<div align="center">
+
+
+
+
+<img src="screenshots/Categories.png" width="800" alt="Categories"/>
+<br><br>
+<img src="screenshots/Books.png" width="800" alt="Books"/>
+<br><br>
+<img src="screenshots/Orders.png" width="800" alt="Orders"/>
+<br><br>
+<img src="screenshots/Login.png" width="800" alt="Login"/>
+<br><br>
+<img src="screenshots/CreateAccount.png" width="800" alt="CreateAccount"/>
+
+</div>
